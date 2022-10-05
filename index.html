@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RumahNesia</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+
+<body>
+    <header class="sec" id="home">
+        <nav>
+            <a href="#" class="logo">RumahNesia</a>
+            <ul>
+                <li><a class="nav_link active home" href="#home">HOME</a></li>
+                <li><a class="nav_link about" href="#about">ABOUT</a></li>
+                <li><a class="nav_link feat" href="#feat">FEATURES</a></li>
+                <li><a class="nav_link port" href="#port">PORTFOLIO</a></li>
+                <li><a class="nav_link con" href="#con">CONTACT</a></li>
+            </ul>
+            <div class="nav_btns">
+                <button><a href="#">ENG</a></button>
+                <button class="toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <span>Welcome to RumahNesia</span>
+            <h1>Discover Your<br>Dream Real Estate</h1>
+            <p>We are one of the best service & property providers in the <br> global market. We are effective.</p>
+            <div class="counter">
+                <div class="count">
+                    <h2>15</h2>
+                    <p>Years of<br>Experience</p>
+                </div>
+                <div class="count">
+                    <h2>728</h2>
+                    <p>Happy<br>Customer</p>
+                </div>
+            </div>
+            <button>Get Started</button>
+        </main>
+    </header>
+    <div class="companies">
+        <div class="image">
+            <img src="images/logo1.png" alt="Equinix">
+        </div>
+        <div class="image">
+            <img src="images/logo2.png" alt="digital_reality">
+        </div>
+        <div class="image">
+            <img src="images/logo3.png" alt="american_tower">
+        </div>
+        <div class="image">
+            <img src="images/logo4.png" alt="prologs">
+        </div>
+    </div>
+    <main class="container">
+        <section class="about sec" id="about">
+            <div class="about_main">
+                <div class="image">
+                    <img src="images/about.jpg" alt="about">
+                    <div class="comment">
+                        <div class="round"><img src="images/testi1.png" alt="commenter"></div>
+                        <div class="comment_text">
+                            <p>We have more than 15+ <br>years of experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_content">
+                    <h3>We Are Offering the best<br>Real Estate Deals</h3>
+                    <p>We have already sold more than 5,000 Homes and we are still
+                        going at very good pace .</p>
+                    <div class="counter_container">
+                        <div class="area">
+                            <h2><span class="num" data-goal="1000">0</span> m<sup>2</sup></h2>
+                            <p>Living area</p>
+                        </div>
+                        <div class="area">
+                            <h2><span class="num" data-goal="500">0</span></h2>
+                            <p>Personal room</p>
+                        </div>
+                        <div class="area">
+                            <h2><span class="num" data-goal="15">0</span></h2>
+                            <p>Award gained</p>
+                        </div>
+                    </div>
+                    <div class="about_grid">
+                        <p><i class="far fa-check-square"></i> World class</p>
+                        <p><i class="far fa-check-square"></i> Affordable</p>
+                        <p><i class="far fa-check-square"></i> Trusted</p>
+                        <p><i class="far fa-check-square"></i> Amenities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="questions">
+                <div class="left_q">
+                    <span>QUESTIONS</span>
+                    <h2>Frequently Asked<br>Question</h2>
+                    <p>Vivamus sed pulvinar diam. Nullam laoreet mollis<br>
+                        mollis. Aliquam pharetra arcu vel.</p>
+                    <button>See More</button>
+                </div>
+                <div class="acc_acordion">
+                    <div class="acc">
+                        <div class="hed_acc">
+                            <h3>Do you offer home loan services?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <p class="ans">Yes. We have tie-ups with some of the leading banks in the country
+                            such as the HDFC Bank, the ICICI Bank, the Axis Bank</p>
+                    </div>
+                    <div class="acc">
+                        <div class="hed_acc">
+                            <h3>What are Capital Gains on property purchase?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <p class="ans">Yes. We have tie-ups with some of the leading banks in the country
+                            such as the HDFC Bank, the ICICI Bank, the Axis Bank</p>
+                    </div>
+                    <div class="acc">
+                        <div class="hed_acc">
+                            <h3>What kind of properties are listed on your website?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <p class="ans">Yes. We have tie-ups with some of the leading banks in the country
+                            such as the HDFC Bank, the ICICI Bank, the Axis Bank</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features sec" id="feat">
+            <h2>Most Searched Real Estate</h2>
+            <p>Get yours before they're all out of stock !</p>
+            <div class="feature_grid">
+                <div class="feat">
+                    <div class="image">
+                        <img src="images/feature1.jpg" alt="feat1">
+                    </div>
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Michigan District</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>45,000 USD</h5>
+                    </div>
+                </div>
+                <div class="feat">
+                    <div class="image">
+                        <img src="images/feature2.jpg" alt="feat2">
+                        <div class="badge">NEW</div>
+                    </div>
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Chicago Property</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>25,000 USD</h5>
+                    </div>
+                </div>
+                <div class="feat">
+                    <div class="image">
+                        <img src="images/feature3.jpg" alt="feat3">
+                        <div class="badge">Hot product</div>
+                    </div>
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <p>OUR TEAM</p>
+                <h2>Let's Meet Our Expert Team</h2>
+                <div class="team_grid">
+                    <div class="team_card">
+                        <div class="img">
+                            <img src="images/team-img1.jpg" alt="team1">
+                            <div class="social">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Kilin Ward</h3>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+                    <div class="team_card">
+                        <div class="img">
+                            <img src="images/team-img4.jpg" alt="team2">
+                            <div class="social">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Jenifar Ambrina</h3>
+                            <span>Chief Executive</span>
+                        </div>
+                    </div>
+                    <div class="team_card">
+                        <div class="img">
+                            <img src="images/team-img3.jpg" alt="team3">
+                            <div class="social">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Johan Henry</h3>
+                            <span>Managing Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec portfolio" id="port">
+            <p>our Latest projects</p>
+            <h2>Our Property and Its Availabilities and <br> All Other Details</h2>
+            <nav>
+                <ul>
+                    <li class="tab active" data-filter="all">All</li>
+                    <li class="tab" data-filter="Appartment">Appartment</li>
+                    <li class="tab" data-filter="home">Luxury Home</li>
+                    <li class="tab" data-filter="palace">Palace</li>
+                    <li class="tab" data-filter="tower">Towers</li>
+                </ul>
+            </nav>
+            <div class="projects_container">
+                <div class="project" data-target="Appartment">
+                    <img src="images/port1.jpg" alt="Appartment">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="tower">
+                    <img src="images/feature1.jpg" alt="tower">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="tower">
+                    <img src="images/feature3.jpg" alt="tower">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="Appartment">
+                    <img src="images/port2.jpg" alt="Appartment">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="home">
+                    <img src="images/port8.jpg" alt="home">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="home">
+                    <img src="images/port9.jpg" alt="home">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="palace">
+                    <img src="images/feature2.jpg" alt="palace">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="palace">
+                    <img src="images/port6.jpg" alt="palace">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="tower">
+                    <img src="images/about.jpg" alt="tower">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="Appartment">
+                    <img src="images/port4.jpg" alt="Appartment">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="Appartment">
+                    <img src="images/port3.jpg" alt="Appartment">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="palace">
+                    <img src="images/port5.jpg" alt="palace">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="palace">
+                    <img src="images/port7.jpg" alt="palace">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="home">
+                    <img src="images/port10.jpg" alt="home">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="home">
+                    <img src="images/port11.jpg" alt="home">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+                <div class="project" data-target="tower">
+                    <img src="images/port12.jpg" alt="tower">
+                    <div class="details">
+                        <div class="caption">
+                            <h4>Amsterdam Tower</h4>
+                            <p>Portland , Michigan , US</p>
+                        </div>
+                        <h5>75,000 USD</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact sec" id="con">
+            <h2 class="hed">Stay connect with us</h2>
+            <div class="row">
+                <div class="form_container">
+                    <form action="" method="get">
+                        <div class="info_grid">
+                            <div class="inp_field">
+                                <label for="name">Full Name</label>
+                                <input type="text" placeholder="Jon Doe" id="name">
+                            </div>
+                            <div class="inp_field">
+                                <label for="email">Email Address</label>
+                                <input type="email" placeholder="Example@gmail.com" id="email">
+                            </div>
+                            <div class="inp_field">
+                                <label for="sub">Subject</label>
+                                <input type="text" placeholder="Write subject" id="sub">
+                            </div>
+                            <div class="inp_field">
+                                <label for="phone">Phone</label>
+                                <input type="tel" placeholder="+00 374 12 465" id="phone">
+                            </div>
+                        </div>
+                        <div class="text_area">
+                            <label for="Message">Your Message</label>
+                            <textarea id="Message" rows="3" placeholder="Write something here..."></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="map_container" id="mapLocation"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
