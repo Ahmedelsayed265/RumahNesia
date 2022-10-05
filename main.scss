@@ -64,7 +64,7 @@ body {
         button {
           @include clearInput();
           @include centerFlex();
-          width: 60px;
+          width: 45px;
           height: 30px;
           font-size: 17px;
           cursor: pointer;
@@ -796,9 +796,144 @@ body {
       .container_grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        .col:nth-child(2),.col:nth-child(4){
+        .col:nth-child(2),
+        .col:nth-child(4) {
           padding-left: 100px;
         }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  body {
+    header {
+      height: 88vh;
+      background-image: url(images/reshome.jpg);
+      background-size: cover;
+      nav {
+        ul {
+          display: none;
+        }
+        .nav_btns{
+          gap: 0;
+        }
+        .nav_btns button:nth-child(2) {
+          display: block;
+        }
+      }
+      main {
+        height: calc(88vh - 80px);
+        h1 {
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+    }
+    .container {
+      padding: 0 30px 30px;
+      .about {
+        .about_main .image {
+          height: 300px;
+          .comment {
+            top: 30px;
+            right: 10px;
+          }
+        }
+        .about_main .about_content h3 {
+          font-size: 27px;
+          line-height: 50px;
+        }
+        .about_main .about_content .counter_container .area {
+          width: calc(100% / 3);
+          gap: 4px;
+          justify-content: end;
+          h2 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .questions .left_q p {
+          font-size: 14px;
+        }
+        .questions .acc_acordion {
+          width: 100%;
+          .acc .hed_acc h3 {
+            font-size: 12px;
+          }
+          .acc .hed_acc i {
+            font-size: 12px;
+          }
+        }
+      }
+      .features {
+        h2 {
+          font-size: 32px;
+          line-height: 50px;
+        }
+        .feature_grid {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 40px;
+          .feat .image {
+            height: 250px;
+          }
+        }
+        .feature_grid .feat .details {
+          flex-direction: row;
+          align-items: center;
+        }
+        .team .team_grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      .portfolio {
+        nav {
+          margin: 30px 0;
+        }
+        nav ul {
+          gap: 15px;
+          li {
+            font-size: 13px;
+          }
+        }
+        .projects_container {
+          grid-template-columns: repeat(8, 355px);
+        }
+      }
+      .contact {
+        padding-bottom: 0;
+        .hed {
+          font-size: 31px;
+        }
+        .row {
+          .form_container form .info_grid {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          .map_container {
+            height: 320px;
+          }
+        }
+      }
+    }
+    footer {
+      padding: 0 30px;
+      .row .social {
+        gap: 4px;
+      }
+      .container_grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        .col:nth-child(2),
+        .col:nth-child(4) {
+          padding-left: 0;
+        }
+        .col h5 {
+          margin-bottom: 20px;
+        }
+      }
+      .copy {
+        height: 80px;
       }
     }
   }

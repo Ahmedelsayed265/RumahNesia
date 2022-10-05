@@ -103,7 +103,7 @@ body header nav .nav_btns button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  width: 45px;
   height: 30px;
   font-size: 17px;
   cursor: pointer;
@@ -861,7 +861,130 @@ body .container .contact .row .map_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  body footer .container_grid .col:nth-child(2), body footer .container_grid .col:nth-child(4) {
+  body footer .container_grid .col:nth-child(2),
+body footer .container_grid .col:nth-child(4) {
     padding-left: 100px;
+  }
+}
+@media (max-width: 450px) {
+  body header {
+    height: 88vh;
+    background-image: url(images/reshome.jpg);
+    background-size: cover;
+  }
+  body header nav ul {
+    display: none;
+  }
+  body header nav .nav_btns {
+    gap: 0;
+  }
+  body header nav .nav_btns button:nth-child(2) {
+    display: block;
+  }
+  body header main {
+    height: calc(88vh - 80px);
+  }
+  body header main h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  body .container {
+    padding: 0 30px 30px;
+  }
+  body .container .about .about_main .image {
+    height: 300px;
+  }
+  body .container .about .about_main .image .comment {
+    top: 30px;
+    right: 10px;
+  }
+  body .container .about .about_main .about_content h3 {
+    font-size: 27px;
+    line-height: 50px;
+  }
+  body .container .about .about_main .about_content .counter_container .area {
+    width: 33.3333333333%;
+    gap: 4px;
+    justify-content: end;
+  }
+  body .container .about .about_main .about_content .counter_container .area h2 {
+    font-size: 20px;
+  }
+  body .container .about .about_main .about_content .counter_container .area p {
+    font-size: 12px;
+  }
+  body .container .about .questions .left_q p {
+    font-size: 14px;
+  }
+  body .container .about .questions .acc_acordion {
+    width: 100%;
+  }
+  body .container .about .questions .acc_acordion .acc .hed_acc h3 {
+    font-size: 12px;
+  }
+  body .container .about .questions .acc_acordion .acc .hed_acc i {
+    font-size: 12px;
+  }
+  body .container .features h2 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+  body .container .features .feature_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  body .container .features .feature_grid .feat .image {
+    height: 250px;
+  }
+  body .container .features .feature_grid .feat .details {
+    flex-direction: row;
+    align-items: center;
+  }
+  body .container .features .team .team_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .container .portfolio nav {
+    margin: 30px 0;
+  }
+  body .container .portfolio nav ul {
+    gap: 15px;
+  }
+  body .container .portfolio nav ul li {
+    font-size: 13px;
+  }
+  body .container .portfolio .projects_container {
+    grid-template-columns: repeat(8, 355px);
+  }
+  body .container .contact {
+    padding-bottom: 0;
+  }
+  body .container .contact .hed {
+    font-size: 31px;
+  }
+  body .container .contact .row .form_container form .info_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .container .contact .row .map_container {
+    height: 320px;
+  }
+  body footer {
+    padding: 0 30px;
+  }
+  body footer .row .social {
+    gap: 4px;
+  }
+  body footer .container_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  body footer .container_grid .col:nth-child(2),
+body footer .container_grid .col:nth-child(4) {
+    padding-left: 0;
+  }
+  body footer .container_grid .col h5 {
+    margin-bottom: 20px;
+  }
+  body footer .copy {
+    height: 80px;
   }
 }/*# sourceMappingURL=main.css.map */
