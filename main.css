@@ -902,6 +902,9 @@ body header nav.res_active .nav_btns {
     flex-direction: column;
     display: flex;
   }
+  body header nav.res_active ul li {
+    text-align: center;
+  }
   body header nav ul {
     display: none;
   }

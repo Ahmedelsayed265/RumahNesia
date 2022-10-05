@@ -834,6 +834,9 @@ body {
             @include centerAbsolute();
             flex-direction: column;
             display: flex;
+            li{
+              text-align: center;
+            }
           }
         }
         ul {
