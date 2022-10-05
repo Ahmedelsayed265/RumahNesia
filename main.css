@@ -430,7 +430,7 @@ body .container .features .team {
 }
 body .container .features .team p {
   font-size: 14px;
-  color: #ababab;
+  color: #282a2e;
   width: 100%;
   text-align: center;
   margin: 0;
@@ -506,6 +506,7 @@ body .container .portfolio p {
   text-align: center;
   margin-bottom: 10px;
   font-size: 16px;
+  color: #282a2e;
 }
 body .container .portfolio h2 {
   text-align: center;
@@ -694,4 +695,173 @@ body .container .contact .row .map_container {
 body footer {
   width: 100%;
   background-color: #282a2e;
+  padding: 0 80px;
+}
+body footer .row {
+  border-bottom: 1px solid #ababab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+body footer .row .logo {
+  color: #fff;
+  font-size: 24px;
+  font-family: "Great Vibes", cursive;
+}
+body footer .row .social {
+  display: flex;
+  gap: 15px;
+}
+body footer .row .social a {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+body footer .container_grid {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body footer .container_grid .col:nth-child(4) {
+  padding-left: 100px;
+}
+body footer .container_grid .col h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+body footer .container_grid .col .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body footer .container_grid .col .links a {
+  color: #ababab;
+  font-size: 14px;
+  font-weight: 400;
+}
+body footer .container_grid .col .links span {
+  color: #ababab;
+}
+body footer .container_grid .col .links span i {
+  color: #fff;
+  margin-right: 4px;
+}
+body footer .copy {
+  height: 50px;
+  width: 100%;
+}
+body footer .copy p {
+  color: #ababab;
+  text-align: center;
+  direction: ltr;
+  font-weight: 400;
+}
+
+@media (max-width: 850px) {
+  body header {
+    height: 65vh;
+    background-position: 50% 0;
+  }
+  body header nav {
+    padding: 0 30px;
+  }
+  body header nav ul {
+    gap: 20px;
+  }
+  body header main {
+    height: calc(65vh - 80px);
+    padding: 50px 40px;
+  }
+  body header main.stretch {
+    height: 65vh;
+    padding: 130px 40px;
+  }
+  body .companies {
+    padding: 40px;
+  }
+  body .container {
+    padding: 0 40px 40px;
+  }
+  body .container .about .about_main {
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+  }
+  body .container .about .about_main .image {
+    width: 100%;
+  }
+  body .container .about .about_main .image .comment {
+    right: 30px;
+  }
+  body .container .about .about_main .about_content {
+    width: 100%;
+  }
+  body .container .about .about_main .about_content .counter_container {
+    gap: 0;
+  }
+  body .container .about .about_main .about_content .counter_container .area {
+    width: 28.5714285714%;
+  }
+  body .container .about .questions {
+    flex-direction: column;
+  }
+  body .container .about .questions .left_q {
+    width: 100%;
+  }
+  body .container .about .questions .acc_acordion {
+    width: 90%;
+  }
+  body .container .features .feature_grid {
+    gap: 15px;
+  }
+  body .container .features .feature_grid .feat .image {
+    height: 160px;
+  }
+  body .container .features .feature_grid .feat .details {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  body .container .features .team .team_grid .team_card h3 {
+    font-size: 16px;
+    line-height: normal;
+  }
+  body .container .features .team .team_grid .team_card p {
+    font-size: 14px;
+  }
+  body .container .portfolio h2 {
+    font-size: 32px;
+    line-height: 52px;
+  }
+  body .container .portfolio .projects_container {
+    grid-template-columns: repeat(8, 324px);
+  }
+  body .container .contact .row {
+    flex-direction: column;
+    gap: 40px;
+  }
+  body .container .contact .row .form_container,
+body .container .contact .row .map_container {
+    width: 100%;
+  }
+  body .container .contact .row .map_container {
+    height: 360px;
+  }
+  body footer {
+    padding: 0 40px;
+  }
+  body footer .container_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  body footer .container_grid .col:nth-child(2), body footer .container_grid .col:nth-child(4) {
+    padding-left: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -380,7 +380,7 @@ body {
         width: 100%;
         p {
           font-size: 14px;
-          color: $border;
+          color: $secondary_black;
           width: 100%;
           text-align: center;
           margin: 0;
@@ -456,6 +456,7 @@ body {
         text-align: center;
         margin-bottom: 10px;
         font-size: 16px;
+        color: $secondary_black;
       }
       h2 {
         text-align: center;
@@ -619,8 +620,186 @@ body {
       }
     }
   }
-  footer{
+  footer {
     width: 100%;
     background-color: $secondary_black;
+    padding: 0 80px;
+    .row {
+      border-bottom: 1px solid $border;
+      @include space-between();
+      padding: 40px 0;
+      .logo {
+        color: $white;
+        font-size: 24px;
+        font-family: 'Great Vibes', cursive;
+      }
+      .social {
+        display: flex;
+        gap: 15px;
+        a {
+          min-width: 30px;
+          min-height: 30px;
+          border-radius: 50%;
+          @include centerFlex();
+          color: $white;
+          font-size: 12px;
+        }
+      }
+    }
+    .container_grid {
+      padding: 50px 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .col {
+        &:nth-child(4) {
+          padding-left: 100px;
+        }
+        h5 {
+          color: $white;
+          font-size: 18px;
+          font-weight: 400;
+          margin-bottom: 30px;
+        }
+        .links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          a {
+            color: $border;
+            font-size: 14px;
+            font-weight: 400;
+          }
+          span {
+            color: $border;
+            i {
+              color: $white;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+    .copy {
+      height: 50px;
+      width: 100%;
+      p {
+        color: $border;
+        text-align: center;
+        direction: ltr;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  body {
+    header {
+      height: 65vh;
+      background-position: 50% 0;
+      nav {
+        padding: 0 30px;
+        ul {
+          gap: 20px;
+        }
+      }
+      main {
+        height: calc(65vh - 80px);
+        padding: 50px 40px;
+        &.stretch {
+          height: 65vh;
+          padding: 130px 40px;
+        }
+      }
+    }
+    .companies {
+      padding: 40px;
+    }
+    .container {
+      padding: 0 40px 40px;
+      .about {
+        .about_main {
+          flex-direction: column;
+          gap: 40px;
+          height: 100%;
+          .image {
+            width: 100%;
+            .comment {
+              right: 30px;
+            }
+          }
+          .about_content {
+            width: 100%;
+            .counter_container {
+              gap: 0;
+              .area {
+                width: calc(100% / 3.5);
+              }
+            }
+          }
+        }
+        .questions {
+          flex-direction: column;
+          .left_q {
+            width: 100%;
+          }
+          .acc_acordion {
+            width: 90%;
+          }
+        }
+      }
+      .features {
+        .feature_grid {
+          gap: 15px;
+          .feat .image {
+            height: 160px;
+          }
+          .feat .details {
+            flex-direction: column;
+            align-items: baseline;
+          }
+        }
+        .team .team_grid .team_card {
+          h3 {
+            font-size: 16px;
+            line-height: normal;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .portfolio {
+        h2 {
+          font-size: 32px;
+          line-height: 52px;
+        }
+        .projects_container {
+          grid-template-columns: repeat(8, 324px);
+        }
+      }
+      .contact {
+        .row {
+          flex-direction: column;
+          gap: 40px;
+          .form_container,
+          .map_container {
+            width: 100%;
+          }
+          .map_container {
+            height: 360px;
+          }
+        }
+      }
+    }
+    footer {
+      padding: 0 40px;
+      .container_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        .col:nth-child(2),.col:nth-child(4){
+          padding-left: 100px;
+        }
+      }
+    }
   }
 }
