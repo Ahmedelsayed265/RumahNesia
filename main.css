@@ -868,7 +868,7 @@ body footer .container_grid .col:nth-child(4) {
 }
 @media (max-width: 450px) {
   body header {
-    height: 88vh;
+    height: 100vh;
     background-image: url(images/reshome.jpg);
     background-size: cover;
   }
@@ -912,7 +912,7 @@ body header nav.res_active .nav_btns {
     display: block;
   }
   body header main {
-    height: calc(88vh - 80px);
+    height: calc(100vh - 80px);
   }
   body header main h1 {
     font-size: 30px;
@@ -929,8 +929,8 @@ body header nav.res_active .nav_btns {
     right: 10px;
   }
   body .container .about .about_main .about_content h3 {
-    font-size: 27px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 48px;
   }
   body .container .about .about_main .about_content .counter_container .area {
     width: 33.3333333333%;
@@ -943,6 +943,10 @@ body header nav.res_active .nav_btns {
   body .container .about .about_main .about_content .counter_container .area p {
     font-size: 12px;
   }
+  body .container .about .questions .left_q h2 {
+    font-size: 34px;
+    line-height: 54px;
+  }
   body .container .about .questions .left_q p {
     font-size: 14px;
   }
@@ -950,7 +954,7 @@ body header nav.res_active .nav_btns {
     width: 100%;
   }
   body .container .about .questions .acc_acordion .acc .hed_acc h3 {
-    font-size: 12px;
+    font-size: 14px;
   }
   body .container .about .questions .acc_acordion .acc .hed_acc i {
     font-size: 12px;
