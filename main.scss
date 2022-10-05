@@ -811,10 +811,35 @@ body {
       background-image: url(images/reshome.jpg);
       background-size: cover;
       nav {
+        &.res_active {
+          padding: 0 30px;
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          background-color: $white;
+          z-index: 99999999;
+          align-items: baseline;
+          .logo,
+          .nav_btns {
+            height: 80px;
+            @include centerFlex();
+          }
+          .nav_btns {
+            position: absolute;
+            top: 0;
+            right: 30px;
+          }
+          ul {
+            @include centerAbsolute();
+            flex-direction: column;
+            display: flex;
+          }
+        }
         ul {
           display: none;
         }
-        .nav_btns{
+        .nav_btns {
           gap: 0;
         }
         .nav_btns button:nth-child(2) {
