@@ -49,6 +49,9 @@ body.RTL header {
 body.RTL header nav ul li a::after {
   bottom: -3px;
 }
+body.RTL header main h1 {
+  letter-spacing: 0;
+}
 body.RTL .container .contact .row .form_container form button {
   margin-left: 0;
   margin-right: 10px;
@@ -60,6 +63,11 @@ body.RTL .container .about .about_main .image .comment {
 body.RTL .container .about .about_main .image .comment .round {
   margin-right: 0;
   margin-left: 10px;
+}
+body.RTL .container .about .about_main .image .comment .comment_text {
+  border-radius: 15px 0 15px 15px;
+  border-left: 0;
+  border-right: 1px solid #f4f4f4;
 }
 body.RTL .container .about .about_main .about_content p {
   padding-right: 0;
@@ -926,6 +934,10 @@ body footer .container_grid .col:nth-child(4) {
   }
   body.RTL footer .container_grid .col:nth-child(4) {
     padding-right: 0;
+  }
+  body.RTL .container .about .about_main .about_content h3 {
+    font-size: 22px;
+    line-height: 46px;
   }
   body header {
     height: 100vh;
