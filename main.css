@@ -939,6 +939,9 @@ body footer .container_grid .col:nth-child(4) {
     font-size: 22px;
     line-height: 46px;
   }
+  body.RTL .container .portfolio nav ul {
+    gap: 40px;
+  }
   body header {
     height: 100vh;
     background-image: url(images/reshome.jpg);
